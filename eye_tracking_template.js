@@ -22,6 +22,7 @@ let expInfo = {
 let PILOTING = util.getUrlParameters().has('__pilotToken');
 
 // Start code blocks for 'Before Experiment'
+// Run 'Before Experiment' code from configuration_code
 // ---- run without Pavlovia: use local copies of two files that Builder points at pavlovia.org ----
 (function () {
   if (/pavlovia\.org$/.test(window.location.hostname)) { return; }
@@ -296,7 +297,7 @@ async function experimentInit() {
     pos: [0, 0], 
     draggable: false, 
     anchor: 'center', 
-    lineWidth: 1, 
+    lineWidth: 0, 
     lineColor: new util.Color([1, 1, 1]), 
     fillColor: new util.Color([1, 1, 1]), 
     colorSpace: 'rgb', 
