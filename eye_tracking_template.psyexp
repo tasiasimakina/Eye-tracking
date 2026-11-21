@@ -554,7 +554,7 @@
     <LoopTerminator name="val_loop"/>
     <LoopInitiator loopType="TrialHandler" name="stim_loop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('stim_file', 'stim1.jpg'), ('stim_label', 'example A')]), OrderedDict([('stim_file', 'stim2.jpg'), ('stim_label', 'example B')])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'stim_file': 'бел_апельсин.png', 'stim_label': 'example A'}, {'stim_file': 'цвет_гранат.png', 'stim_label': 'example B'}, {'stim_file': 'цвет_яблоко.png', 'stim_label': 'example C'}, {'stim_file': 'бел_ананас.png', 'stim_label': 'example D'}, {'stim_file': 'цвет_томат.png', 'stim_label': 'example E'}, {'stim_file': 'бел_грейпфрут.png', 'stim_label': 'example F'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="stimuli.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
