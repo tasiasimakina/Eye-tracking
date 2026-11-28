@@ -361,7 +361,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.287, 0.872)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.8, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -527,7 +527,7 @@
     <Routine name="intro_calibatrion_trial"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('calibration_x', -0.44), ('calibration_y', -0.44)]), OrderedDict([('calibration_x', -0.44), ('calibration_y', -0.22)]), OrderedDict([('calibration_x', -0.44), ('calibration_y', 0.0)]), OrderedDict([('calibration_x', -0.44), ('calibration_y', 0.22)]), OrderedDict([('calibration_x', -0.44), ('calibration_y', 0.44)]), OrderedDict([('calibration_x', -0.22), ('calibration_y', -0.44)]), OrderedDict([('calibration_x', -0.22), ('calibration_y', -0.22)]), OrderedDict([('calibration_x', -0.22), ('calibration_y', 0.0)]), OrderedDict([('calibration_x', -0.22), ('calibration_y', 0.22)]), OrderedDict([('calibration_x', -0.22), ('calibration_y', 0.44)]), OrderedDict([('calibration_x', 0.0), ('calibration_y', -0.44)]), OrderedDict([('calibration_x', 0.0), ('calibration_y', -0.22)]), OrderedDict([('calibration_x', 0.0), ('calibration_y', 0.0)]), OrderedDict([('calibration_x', 0.0), ('calibration_y', 0.22)]), OrderedDict([('calibration_x', 0.0), ('calibration_y', 0.44)]), OrderedDict([('calibration_x', 0.22), ('calibration_y', -0.44)]), OrderedDict([('calibration_x', 0.22), ('calibration_y', -0.22)]), OrderedDict([('calibration_x', 0.22), ('calibration_y', 0.0)]), OrderedDict([('calibration_x', 0.22), ('calibration_y', 0.22)]), OrderedDict([('calibration_x', 0.22), ('calibration_y', 0.44)]), OrderedDict([('calibration_x', 0.44), ('calibration_y', -0.44)]), OrderedDict([('calibration_x', 0.44), ('calibration_y', -0.22)]), OrderedDict([('calibration_x', 0.44), ('calibration_y', 0.0)]), OrderedDict([('calibration_x', 0.44), ('calibration_y', 0.22)]), OrderedDict([('calibration_x', 0.44), ('calibration_y', 0.44)])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'calibration_x': -0.45, 'calibration_y': -0.45}, {'calibration_x': -0.15, 'calibration_y': -0.45}, {'calibration_x': 0.15, 'calibration_y': -0.45}, {'calibration_x': 0.45, 'calibration_y': -0.45}, {'calibration_x': -0.45, 'calibration_y': -0.15}, {'calibration_x': -0.15, 'calibration_y': -0.15}, {'calibration_x': 0.15, 'calibration_y': -0.15}, {'calibration_x': 0.45, 'calibration_y': -0.15}, {'calibration_x': -0.45, 'calibration_y': 0.15}, {'calibration_x': -0.15, 'calibration_y': 0.15}, {'calibration_x': 0.15, 'calibration_y': 0.15}, {'calibration_x': 0.45, 'calibration_y': 0.15}, {'calibration_x': -0.45, 'calibration_y': 0.45}, {'calibration_x': -0.15, 'calibration_y': 0.45}, {'calibration_x': 0.15, 'calibration_y': 0.45}, {'calibration_x': 0.45, 'calibration_y': 0.45}, {'calibration_x': -0.45, 'calibration_y': -0.45}, {'calibration_x': 0.45, 'calibration_y': -0.45}, {'calibration_x': 0.45, 'calibration_y': 0.45}, {'calibration_x': -0.45, 'calibration_y': 0.45}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="calibration_trials.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
@@ -541,7 +541,7 @@
     <Routine name="intro_validation_trial"/>
     <LoopInitiator loopType="TrialHandler" name="val_loop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('val_x', -0.3), ('val_y', -0.3)]), OrderedDict([('val_x', -0.3), ('val_y', 0)]), OrderedDict([('val_x', -0.3), ('val_y', 0.3)]), OrderedDict([('val_x', 0), ('val_y', -0.3)]), OrderedDict([('val_x', 0), ('val_y', 0)]), OrderedDict([('val_x', 0), ('val_y', 0.3)]), OrderedDict([('val_x', 0.3), ('val_y', -0.3)]), OrderedDict([('val_x', 0.3), ('val_y', 0)]), OrderedDict([('val_x', 0.3), ('val_y', 0.3)])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'val_x': -0.3, 'val_y': -0.3}, {'val_x': -0.3, 'val_y': 0}, {'val_x': -0.3, 'val_y': 0.3}, {'val_x': 0, 'val_y': -0.3}, {'val_x': 0, 'val_y': 0}, {'val_x': 0, 'val_y': 0.3}, {'val_x': 0.3, 'val_y': -0.3}, {'val_x': 0.3, 'val_y': 0}, {'val_x': 0.3, 'val_y': 0.3}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="validation_trials.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
